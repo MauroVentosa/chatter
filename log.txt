@@ -1,0 +1,155 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2020-01-22 19:57:15.377  INFO 25492 --- [           main] com.more.chatter.ChatterApplication      : Starting ChatterApplication v0.0.1-SNAPSHOT on LAPTOP-TCOV96IH with PID 25492 (C:\Users\vento\eclipse-workspace\chatter\target\chatter-0.0.1-SNAPSHOT.jar started by vento in C:\Users\vento\eclipse-workspace\chatter)
+2020-01-22 19:57:15.382  INFO 25492 --- [           main] com.more.chatter.ChatterApplication      : No active profile set, falling back to default profiles: default
+2020-01-22 19:57:16.455  INFO 25492 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-22 19:57:16.489  INFO 25492 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 JPA repository interfaces.
+2020-01-22 19:57:16.925  INFO 25492 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-01-22 19:57:16.941  INFO 25492 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2020-01-22 19:57:16.954  INFO 25492 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-01-22 19:57:17.227  INFO 25492 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-22 19:57:17.660  INFO 25492 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-22 19:57:17.697  INFO 25492 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-22 19:57:17.700  INFO 25492 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-22 19:57:18.781  INFO 25492 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-01-22 19:57:18.811  INFO 25492 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-22 19:57:18.811  INFO 25492 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-22 19:57:18.973  INFO 25492 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-22 19:57:18.973  INFO 25492 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3515 ms
+2020-01-22 19:57:19.315  INFO 25492 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-01-22 19:57:19.963  INFO 25492 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-01-22 19:57:20.092  INFO 25492 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-22 19:57:20.263  INFO 25492 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-22 19:57:20.497  INFO 25492 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-22 19:57:20.787  INFO 25492 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-22 19:57:21.400  INFO 25492 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-22 19:57:21.415  INFO 25492 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-22 19:57:22.065  WARN 25492 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-01-22 19:57:22.344  INFO 25492 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 19:57:23.068  INFO 25492 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-01-22 19:57:23.170  INFO 25492 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-01-22 19:57:23.171  INFO 25492 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 1 subscriber(s).
+2020-01-22 19:57:23.171  INFO 25492 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2020-01-22 19:57:23.171  INFO 25492 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {transformer} as a subscriber to the 'outputChannel' channel
+2020-01-22 19:57:23.171  INFO 25492 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'application.outputChannel' has 1 subscriber(s).
+2020-01-22 19:57:23.171  INFO 25492 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'twitterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/more/chatter/TwitterConfig.class]'; from source: 'bean method twitterFlow'
+2020-01-22 19:57:23.171  INFO 25492 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'application.twitterFlow.channel#0' has 1 subscriber(s).
+2020-01-22 19:57:23.171  INFO 25492 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started bean 'twitterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/more/chatter/TwitterConfig.class]'; from source: 'bean method twitterFlow'
+2020-01-22 19:57:23.175  INFO 25492 --- [           main] c.m.c.twitter.TwitterMessageProducer     : started bean 'twitterMessageProducer'; defined in: 'class path resource [com/more/chatter/TwitterConfig.class]'; from source: 'org.springframework.core.type.classreading.SimpleMethodMetadata@14c5515'
+2020-01-22 19:57:23.175  INFO 25492 --- [1[initializing]] twitter4j.TwitterStreamImpl              : Establishing connection.
+2020-01-22 19:57:23.239  INFO 25492 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-22 19:57:23.243  INFO 25492 --- [           main] com.more.chatter.ChatterApplication      : Started ChatterApplication in 8.535 seconds (JVM running for 8.921)
+2020-01-22 19:57:26.924  INFO 25492 --- [ing connection]] twitter4j.TwitterStreamImpl              : Connection established.
+2020-01-22 19:57:26.924  INFO 25492 --- [ing connection]] twitter4j.TwitterStreamImpl              : Receiving status stream.
+2020-01-22 19:57:26.971  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : ???
+2020-01-22 19:57:29.697  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @Sime3r: un camarero del bora bora ibiza night club acaba de romperle la cadera al 'mejor centrocampista del mundo' lmao https://t.co/cT…
+2020-01-22 19:57:29.773  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : @camuzoangel @cristobalsoria Te recuerdo que bale y benzema estaban lesionados y Zidane los ha puesto para que no p… https://t.co/hnF6kQ32I4
+2020-01-22 19:57:30.203  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @HoyEnDeportes4: Gran gen competitivo del Madrid sabiendo sufrir para ganar a Unionistas en Copa del Rey, no como el ridículo que ha hec…
+2020-01-22 19:57:30.207  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : Pura historia éste tweet.
+2020-01-22 19:57:30.829  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @CathalCallinan: Your brother should know all about that
+2020-01-22 19:57:30.830  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @RichardDees: El otro día, Setién se quejaba de  que el viento secaba el césped y estaba lento. Hoy se ha quejado de que el césped artif…
+2020-01-22 19:57:32.049  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @Dembelismo99: “El equipo no me ha gustado evidentemente”, dijo esto Valverde alguna vez en 2 años y medio? El que no era autocrítico
+2020-01-22 19:57:32.096  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @Murphhyy_: GOAL IN IBIZA BUT WHO TO CHRIS KAMARA https://t.co/NPsup56QRu
+2020-01-22 19:57:33.273  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : 2020 / CAFÉ MAMBO IBIZA / AO VIVO / EXCLUSIVO / CANAL ALTERNATIVO AO VIVO https://t.co/kCwh77gtT3
+2020-01-22 19:57:34.809  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @Manu12SFC: Pablo Alfaro, la leyenda sevillista y actual entrenador del Ibiza, es Enrique Pastor con peluca. https://t.co/fWtmnPVTI5
+2020-01-22 19:57:34.901  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @CooLifeGame: Decidme que esto es broma.
+
+Ibiza vs Barcelona en mitad tiempo. https://t.co/H71yQidStT
+2020-01-22 19:57:37.163  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : A : Amnesia - Jul
+U : un jour peut être - Mac Tyer
+R : R.A.C - SCH
+E : Eh Boy - Bolemvn
+L : L’Heritier - L’artiste… https://t.co/O21i4fW4Mq
+2020-01-22 19:57:38.701  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @SrDallas_RM: UN TÍO QUE EN 2 HORAS SE VA A CURRAR A PACHA DE CAMARERO ROMPIENDO A DE JONG EN 5
+2020-01-22 19:57:39.212  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : Copa del Rey: Barcelona dio vuelta el resultado frente a Ibiza, un equipo de tercera división, y se clasificó a la… https://t.co/aOBoafxitW
+2020-01-22 19:57:39.214  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @FCBarcelona: Goal Ibiza. 1-0.
+2020-01-22 19:57:40.583  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @FCBarcelona: Goal Ibiza. 1-0.
+2020-01-22 19:57:42.388  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @TheReevHD: Lovely ball down the line from Tiesto, finds David Guetta, quick 1-2 with Heldens with the cross for GARRIIIXXXXXX
+2020-01-22 19:57:42.390  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @ActuFoot_: ?? Ibiza ouvre le score ! Le Barça est mené après 10 minutes de jeu.
+
+IBIZA  1-0  FC BARCELONE
+2020-01-22 19:57:42.900  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @Murphhyy_: GOAL IN IBIZA BUT WHO TO CHRIS KAMARA https://t.co/NPsup56QRu
+2020-01-22 19:57:44.127  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @VPalacios__: Enorme De Jong. Claro que el Barça debía ganar ante el Ibiza. Primero por categoría y segundo porque la mancha a Setien se…
+2020-01-22 19:57:44.644  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : If Ibiza isn’t booked by the end of January I’m throwing a FIT
+2020-01-22 19:57:44.828  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : ¿Seguro? Sticnting Helmond 3 Barcelona 0.
+Pretemporada de 1988. El césped en este campo de Helmond es artificial. N… https://t.co/aQonMKflqZ
+2020-01-22 19:57:45.562  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @Sime3r: un camarero del bora bora ibiza night club acaba de romperle la cadera al 'mejor centrocampista del mundo' lmao https://t.co/cT…
+2020-01-22 19:57:46.176  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @FCBarcelona_es: ? ¡Final del partido!
+? Ibiza 1-2 FC Barcelona 
+? Caballé / Griezmann (x2)
+? Classificados para los octavos
+? #CopaBarç…
+2020-01-22 19:57:46.693  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : See What Griezmann Said After Barcelona’s 2 -1 Win Over Ibiza https://t.co/v4rVOztAQ0 https://t.co/J25PWG75T8
+2020-01-22 19:57:47.199  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : @jotajordi13 Esa risa se nota que es de estrés, le ha visto las orejas al Ibiza con tanto Tiki Taka jajajaja
+2020-01-22 19:57:47.916  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @GaryLineker: It’s all-square. @FCBarcelona have equalised. Hard to imagine not scoring in Ibiza.
+2020-01-22 19:57:48.531  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @FCBarcelona: Griezmann double secures Cup win at Ibiza!
+2020-01-22 19:57:49.664  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @FCBarcelona: Goal Ibiza. 1-0.
+2020-01-22 19:57:53.375  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @GoalTurkiye: Quique Setien bir ?eyler deniyor.
+
+? ?spanya Kral Kupas?
+?? Ibiza - Barcelona https://t.co/GHO27bhu2K
+2020-01-22 19:57:55.342  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @Manu12SFC: Pablo Alfaro, la leyenda sevillista y actual entrenador del Ibiza, es Enrique Pastor con peluca. https://t.co/fWtmnPVTI5
+2020-01-22 19:57:55.344  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @Delcid23: ?? Tomá Posesión!!! Así le cantaban a Setién y al Barca de los 1,022 pases para atrás ???
+2020-01-22 19:57:56.007  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @Manu12SFC: Pablo Alfaro, la leyenda sevillista y actual entrenador del Ibiza, es Enrique Pastor con peluca. https://t.co/fWtmnPVTI5
+2020-01-22 19:57:56.010  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : @AliouneBNdiaye1 Heureusement qaye ?? Niounn Ibiza dh mo niou naronn toglo
+2020-01-22 19:57:56.030  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : 1er tiro a puerta del Barça en el min. 68'. 80% de posesión en la 1a parte para 0 tiros vs. 20% de posesión para 2 tiros (1 gol) del Ibiza
+2020-01-22 19:57:56.826  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @spoeklub: Grün ist ab heute nicht mehr die Farbe des Anstands, sondern die der politischen Zensur. Und Grün ist auch die Farbe der Will…
+2020-01-22 19:57:57.751  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @FCBarcelona: Griezmann double secures Cup win at Ibiza!
+2020-01-22 19:57:57.752  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @BetisStats: Ahora es cuando el resto del mundo se va a dar cuenta de lo que hemos soportado los béticos... Ahora...
+2020-01-22 19:57:58.566  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @_Moroncito_: En Ibiza siempre hay que esperar a última hora para ver si se pesca algo. Es de primero de discoteca.
+2020-01-22 19:57:58.668  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @LVPibai: Me hago una pizza y se me quema porque me quedo viendo el Ibiza-Barça. Pienso bueno esto le puede pasar a cualquiera. Pongo ot…
+2020-01-22 19:57:59.898  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @HoyEnDeportes4: Gran gen competitivo del Madrid sabiendo sufrir para ganar a Unionistas en Copa del Rey, no como el ridículo que ha hec…
+2020-01-22 19:57:59.951  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @FootyAccums: Ibiza starting XI vs. Barcelona:
+
+David Guetta; Martin Garrix, Paul van Dyk, Peggy Gou, Swedish House Mafia; Calvin Harris…
+2020-01-22 19:57:59.972  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @LVPibai: Me hago una pizza y se me quema porque me quedo viendo el Ibiza-Barça. Pienso bueno esto le puede pasar a cualquiera. Pongo ot…
+2020-01-22 19:58:00.046  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @LVPibai: Me hago una pizza y se me quema porque me quedo viendo el Ibiza-Barça. Pienso bueno esto le puede pasar a cualquiera. Pongo ot…
+2020-01-22 19:58:00.143  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @mundodeportivo: ?? Setién: “El equipo no me ha gustado, evidentemente. Me habría encantado que estuviéramos más precisos, pero entiendo…
+2020-01-22 19:58:02.150  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @Manu12SFC: Pablo Alfaro, la leyenda sevillista y actual entrenador del Ibiza, es Enrique Pastor con peluca. https://t.co/fWtmnPVTI5
+2020-01-22 19:58:02.244  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @GaryLineker: It’s all-square. @FCBarcelona have equalised. Hard to imagine not scoring in Ibiza.
+2020-01-22 19:58:02.764  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : @INIE8TAZO El Barça contra el Ibiza ha tenido el 80% de la posesión y da vergüenza ajena, que después de echar a Va… https://t.co/wQLlF8kcp4
+2020-01-22 19:58:03.686  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @LVPibai: Me hago una pizza y se me quema porque me quedo viendo el Ibiza-Barça. Pienso bueno esto le puede pasar a cualquiera. Pongo ot…
+2020-01-22 19:58:05.019  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @mink_1232: @elchiringuitotv 0 Tiros a puerta del barsa de Setien en 45 minutos contra un segunda y gol legal anulado al Ibiza
+2020-01-22 19:58:05.326  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @desigual: Fall in love with our New Collection. A tribute to Ibiza and all the love we feel for it ?
+2020-01-22 19:58:05.852  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @_Moroncito_: En Ibiza siempre hay que esperar a última hora para ver si se pesca algo. Es de primero de discoteca.
+2020-01-22 19:58:07.685  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @confidenterm: “A Griezmann se le fichó exactamente para esto”
+
+120 millones se gastaron para pasar de eliminatoria contra el Ibiza, fic…
+2020-01-22 19:58:10.445  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @JMarquesSoprano: Que por Ibiza conmigo te pierdas ?
+
+https://t.co/VKHGV39XxA
+2020-01-22 19:58:11.223  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @FootyAccums: Ibiza starting XI vs. Barcelona:
+
+David Guetta; Martin Garrix, Paul van Dyk, Peggy Gou, Swedish House Mafia; Calvin Harris…
+2020-01-22 19:58:12.492  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @MundoMaldini: Primera parte con más del 80% de posesión ante un Segunda B sin tirar a puerta. Sin un acercamiento peligroso siquiera. P…
+2020-01-22 19:58:12.581  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : ¡¡Marca Setiennnn!! => "El Barça terminó el duelo con un 78% de posesión, 718 pases y...¡¡tres tiros a puerta!!". O… https://t.co/GSbgQSfwF2
+2020-01-22 19:58:13.209  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @_Moroncito_: En Ibiza siempre hay que esperar a última hora para ver si se pesca algo. Es de primero de discoteca.
+2020-01-22 19:58:13.569  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @DonShelby_: El culé está celebrando que le ha ganado al Ibiza con un gol en el minuto 93.
+
+La última vez que nosotros celebramos un gol…
+2020-01-22 19:58:14.336  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @Fatinismo: Seguramente pasemos pero lo de hoy con el Ibiza ha sido penoso con muchos titulares en el once no te puede pasar eso
+2020-01-22 19:58:14.848  INFO 25492 --- [c Dispatcher[0]] rConfig$$EnhancerBySpringCGLIB$$f5851080 : RT @FootyAccums: Ibiza starting XI vs. Barcelona:
+
+David Guetta; Martin Garrix, Paul van Dyk, Peggy Gou, Swedish House Mafia; Calvin Harris…
+2020-01-22 19:58:17.314  INFO 25492 --- [extShutdownHook] c.m.c.twitter.TwitterMessageProducer     : stopped bean 'twitterMessageProducer'; defined in: 'class path resource [com/more/chatter/TwitterConfig.class]'; from source: 'org.springframework.core.type.classreading.SimpleMethodMetadata@14c5515'
+2020-01-22 19:58:17.314  INFO 25492 --- [extShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {transformer} as a subscriber to the 'outputChannel' channel
+2020-01-22 19:58:17.314  INFO 25492 --- [extShutdownHook] o.s.integration.channel.DirectChannel    : Channel 'application.outputChannel' has 0 subscriber(s).
+2020-01-22 19:58:17.314  INFO 25492 --- [extShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean 'twitterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#0'; defined in: 'class path resource [com/more/chatter/TwitterConfig.class]'; from source: 'bean method twitterFlow'
+2020-01-22 19:58:17.314  INFO 25492 --- [extShutdownHook] o.s.integration.channel.DirectChannel    : Channel 'application.twitterFlow.channel#0' has 0 subscriber(s).
+2020-01-22 19:58:17.314  INFO 25492 --- [extShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean 'twitterFlow.org.springframework.integration.config.ConsumerEndpointFactoryBean#1'; defined in: 'class path resource [com/more/chatter/TwitterConfig.class]'; from source: 'bean method twitterFlow'
+2020-01-22 19:58:17.314  INFO 25492 --- [extShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-01-22 19:58:17.314  INFO 25492 --- [extShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'application.errorChannel' has 0 subscriber(s).
+2020-01-22 19:58:17.314  INFO 25492 --- [extShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2020-01-22 19:58:17.315  INFO 25492 --- [extShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-01-22 19:58:17.322  INFO 25492 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 19:58:17.323  INFO 25492 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-22 19:58:17.323  INFO 25492 --- [extShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-01-22 19:58:17.327  INFO 25492 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-01-22 19:58:17.329  INFO 25492 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,0 +1,13 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2020-01-22 19:57:09.803  INFO 22672 --- [           main] com.more.chatter.ChatterApplication      : Starting ChatterApplication v0.0.1-SNAPSHOT on LAPTOP-TCOV96IH with PID 22672 (C:\Users\vento\eclipse-workspace\chatter\target\chatter-0.0.1-SNAPSHOT.jar started by vento in C:\Users\vento\eclipse-workspace\chatter)
+2020-01-22 19:57:09.806  INFO 22672 --- [           main] com.more.chatter.ChatterApplication      : No active profile set, falling back to default profiles: default
+2020-01-22 19:57:10.886  INFO 22672 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-22 19:57:10.923  INFO 22672 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 JPA repository interfaces.
